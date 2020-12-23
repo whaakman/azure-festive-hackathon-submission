@@ -16,9 +16,6 @@ variable "app_locations" {
   default = {
     eastus2 = {
       country_codes = ["US2"]
-    },
-    eastus = {
-      country_codes = ["eastus"]
     }
   }
 }
