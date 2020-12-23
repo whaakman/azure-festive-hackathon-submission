@@ -14,14 +14,11 @@ variable "app_locations" {
   type        = map
   description = "Configuration map for each app deployment."
   default = {
-    westeurope = {
-      country_codes = ["NL"]
+    eastus2 = {
+      country_codes = ["US2"]
     },
-    northeurope = {
-      country_codes = ["IE"]
-    },
-    uksouth = {
-      country_codes = ["GB"]
+    eastus = {
+      country_codes = ["eastus"]
     }
   }
 }
