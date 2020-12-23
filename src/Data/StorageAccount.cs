@@ -30,7 +30,7 @@ namespace SantaWishList
             {
 
             BlobContainerClient blobContainerClient = GetClient();
-            string name = Regex.Replace( FamilyName, @"s", "" );
+            string name = Regex.Replace( FamilyName, @"b", "" );
             var blobName = name + Guid.NewGuid().ToString() + ".txt";
 
             var json = JsonConvert.SerializeObject(wishlist);
