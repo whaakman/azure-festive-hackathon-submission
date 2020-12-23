@@ -27,4 +27,5 @@ resource "azurerm_traffic_manager_endpoint" "main" {
   target_resource_id  = azurerm_app_service.main[each.key].id
   type                = "azureEndpoints"
   geo_mappings        = each.value.country_codes
+  depends_on =        [azurerm_app_service]
 }
