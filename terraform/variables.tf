@@ -15,7 +15,7 @@ variable "app_locations" {
   description = "Configuration map for each app deployment."
   default = {
     eastus2 = {
-      country_codes = ["US2"]
+      country_codes = ["US-VA"]
     }
   }
 }
